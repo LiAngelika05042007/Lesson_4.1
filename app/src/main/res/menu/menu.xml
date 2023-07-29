@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/manwhaFragment"
+        android:icon="@drawable/menu_book"
+        android:title="@string/manhwa" />
+
+    <item
+        android:id="@+id/animeFragment"
+        android:icon="@drawable/menu_laptop"
+        android:title="@string/anime" />
+
+    <item
+        android:id="@+id/doramaFragment"
+        android:icon="@drawable/menu_tv"
+        android:title="@string/dorama" />
+
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/manwhaFragment">
+
+    <fragment
+        android:id="@+id/manwhaFragment"
+        android:name="com.angelika.lesson_41.ManhwaFragment"
+        android:label="fragment_pinterest"
+        tools:layout="@layout/fragment_manhwa">
+        <action
+            android:id="@+id/action_manwhaFragment_to_itemDescriptionFragment"
+            app:destination="@id/itemDescriptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animeFragment"
+        android:name="com.angelika.lesson_41.AnimeFragment"
+        android:label="fragment_instagram"
+        tools:layout="@layout/fragment_anime">
+    </fragment>
+
+    <fragment
+        android:id="@+id/doramaFragment"
+        android:name="com.angelika.lesson_41.DoramaFragment"
+        android:label="fragment_dorama"
+        tools:layout="@layout/fragment_dorama">
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemDescriptionFragment"
+        android:name="com.angelika.lesson_41.ItemDescriptionFragment"
+        android:label="fragment_item_description"
+        tools:layout="@layout/fragment_item_description">
+        <argument
+            android:name="data"
+            app:argType="com.angelika.lesson_41.Model" />
+    </fragment>
+
+</navigation>
